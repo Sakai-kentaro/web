@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("空白でポストするなよ~");
+  } else {
+    入力スペース.innerText = 入力内容.value;
+    alert("ポストしました");
+  }
+  入力内容.value = "";
+}
+</script>
+  </head>
+  <body>
+    回覧板
+    <p id="入力スペース">お知らせはまだありません</p>
+    <input id="入力内容"><button onclick="伝言する();">ポスト</button>
+    </body>
+</html>
